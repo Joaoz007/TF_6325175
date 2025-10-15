@@ -1,0 +1,5 @@
+1. S- A classe "ProcessadorDePedidos" faz tudo. Isso dificulta manutenção e testes.
+2. O- Para adicionar um novo tipo de pagamento. É preciso alterar o "if" dentro de "processar()".
+3. L- Não há uso de herança ou abstração que permita substituição de implementações.
+4. I- Não há interfaces — todas as responsabilidades estão acopladas em uma única classe.
+5. D- A classe depende diretamente de implementações concretas (cartao_credito, boleto).

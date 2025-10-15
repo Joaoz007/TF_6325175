@@ -1,0 +1,11 @@
+1 - Agora, cada classe tem uma responsabilidade: 
+    "ProcessadorDePedidos" processa, 
+    "Pagamento" cuidam do pagamento, 
+    "Notificacao" cuidam das notificações.
+2 - É possível adicionar novos pagamentos ou notificações (ex: PagamentoCriptomoeda) 
+    sem alterar o código existente, apenas criando novas classes.
+3 - Qualquer nova subclasse de "MetodoPagamento" ou "Notificador" pode ser usada no lugar 
+    das atuais sem quebrar o sistema.
+4 - As interfaces foram divididas: uma para pagamentos e outra para notificações.
+5 - "ProcessadorDePedidos" depende de abstrações (MetodoPagamento, Notificador), 
+    não de implementações concretas.
